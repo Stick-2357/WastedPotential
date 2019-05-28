@@ -14,35 +14,24 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
-/**
- *
- * @author chicks967
- */
-public class PastTripController 
-{
+public class PastTripsController {
     static Parent root;
     
-    @FXML
-    private Button backButton;
+    @FXML private Button backButton;
 
-     public void initialize()
-    {
-        try
-        {
+    public void initialize() {
+        try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MainPage.fxml"));
             root = loader.load();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             System.out.print("IOException occured while loading second view");
             e.printStackTrace();
             System.exit(1);
         }
     }
-    @FXML
-    void backButtonPressed(ActionEvent event) 
-    {
+     
+    @FXML void backButtonPressed(ActionEvent event)  {
         Scene scene = ((Node)event.getSource()).getScene();
-            scene.setRoot(root);
+        scene.setRoot(root);
     }
 }

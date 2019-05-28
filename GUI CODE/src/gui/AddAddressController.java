@@ -1,8 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*     Team: Wasted Potential
+    Project: ProDeo Router
+       File: AddAddressController.java
+Description: Takes mulitple addresses, and finds quickest route */
 package gui;
 
 import java.io.IOException;
@@ -14,13 +13,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 
-/**
- *
- * @author chicks967
- */
-public class UpdateStudentController {
+public class AddAddressController {
     static Parent root;
-     
+    
     @FXML private Button backButton;
 
     public void initialize() {
@@ -33,8 +28,9 @@ public class UpdateStudentController {
             System.exit(1);
         }
     }
-    @FXML void backButtonPressed(ActionEvent event) {
+     
+    @FXML void backButtonPressed(ActionEvent event)  {
         Scene scene = ((Node)event.getSource()).getScene();
-        scene.setRoot(root);
+            scene.setRoot(root);
     }
 }

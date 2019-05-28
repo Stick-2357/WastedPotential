@@ -4,21 +4,27 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UpdateStudentController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UpdateStudentController">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
+            <ImageView fitHeight="359.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Desktop/beautiful-blue-abstract-background-stock-footage-video-100-royalty-free-of-the-day.jpg" />
+               </image>
+            </ImageView>
             <Label layoutX="189.0" layoutY="22.0" text="Update Student">
                <font>
                   <Font name="Berlin Sans FB" size="36.0" />
                </font>
             </Label>
-            <Button layoutX="272.0" layoutY="285.0" minWidth="75.0" mnemonicParsing="false" text="Create" />
-            <Button layoutX="272.0" layoutY="325.0" minWidth="75.0" mnemonicParsing="false" text="Back" />
+            <Button layoutX="272.0" layoutY="290.0" minWidth="75.0" mnemonicParsing="false" text="Create" />
             <TextField layoutX="235.0" layoutY="85.0" promptText="FIrst Name" />
             <TextField layoutX="235.0" layoutY="205.0" promptText="Note about Student" />
             <TextField layoutX="334.0" layoutY="165.0" prefWidth="50.0" promptText="Grade" />
